@@ -3,7 +3,7 @@ package com.algorithm.learn;
 /**
  * @author cuibaoqiang
  * @date 2021-07-14 11:25:43
- * @desc
+ * @desc 归并排序
  */
 public class MergeSort {
     static void mergesort(int[] nums, int start, int end) {
