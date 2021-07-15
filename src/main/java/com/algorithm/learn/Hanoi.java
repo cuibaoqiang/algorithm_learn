@@ -15,16 +15,12 @@ public class Hanoi {
      */
     private static void hanoi(int n, char origin, char assist, char destination) {
         if (n == 1) {
-            move(origin, destination);
+            System.out.println("Direction:" + origin + "--->" + destination);
         } else {
             hanoi(n - 1, origin, destination, assist);
-            move(origin, destination);
+            hanoi(1, origin, assist, destination);
             hanoi(n - 1, assist, origin, destination);
         }
-    }
-
-    private static void move(char origin, char destination) {
-        System.out.println("Direction:" + origin + "--->" + destination);
     }
 
     public static void main(String[] args) {
