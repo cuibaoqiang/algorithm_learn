@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author cuibaoqiang
  * @date 2021-07-14 17:47:12
- * @desc
+ * @desc 快速排序
  */
 public class QuickSort {
 
