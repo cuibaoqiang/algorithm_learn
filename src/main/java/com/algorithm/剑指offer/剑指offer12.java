@@ -1,5 +1,7 @@
 package com.algorithm.剑指offer;
 
+import java.util.Arrays;
+
 /**
  * @author cuibaoqiang
  * @date 2021-09-07 14:19:46
@@ -8,9 +10,11 @@ package com.algorithm.剑指offer;
 public class 剑指offer12 {
     public static void main(String[] args) {
         剑指offer12 code = new 剑指offer12();
-        char[][] board = {{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
-        String word = "ABCCEDA";
+//        char[][] board = {{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
+        char[][] board = {{'C','A','A'},{'A','A','A'},{'B','C','D'}};
+        String word = "AAB";
         System.out.println(code.exist(board, word));
+        System.out.println(Arrays.deepToString(board));
     }
 
     public boolean exist(char[][] board, String word) {
@@ -31,10 +35,12 @@ public class 剑指offer12 {
         if (k == words.length - 1) {
             return true;
         }
+        board[i][j] = '\0';
         boolean res = dfs(board, words, i + 1, j, k + 1) || // 向下遍历
                 dfs(board, words, i - 1, j, k + 1) || // 向上遍历
                 dfs(board, words, i, j + 1, k + 1) || // 向右遍历
                 dfs(board, words, i, j - 1, k + 1); // 向左遍历
+        board[i][j] = words[k];
         return res;
     }
 }
