@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * @author cuibaoqiang
  * @date 2022-01-28 16:11:36
- * @desc 牛客网华为机试 1
+ * @desc 牛客网华为机试 2
  */
 public class Main {
     public static void main(String[] args) {
