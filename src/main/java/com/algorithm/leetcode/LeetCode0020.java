@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * @author cuibaoqiang
  * @date 2022-02-08 14:55:47
- * @desc LeetCode 0001 有效的括号
+ * @desc 有效的括号
  */
 public class LeetCode0020 {
     public static void main(String[] args) {
