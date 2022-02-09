@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author cuibaoqiang
  * @date 2022-02-08 23:59:55
- * @desc 可变数组
+ * @desc 操作数组
  */
 public class TestOpArray {
     public static void main(String[] args) {
