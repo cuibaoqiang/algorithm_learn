@@ -1,13 +1,13 @@
-package com.algorithm.leetcode;
+package com.algorithm.leetcode.LeetCode0509;
 
 /**
  * @author cuibaoqiang
  * @date 2022-02-08 10:39:40
  * @desc 斐波那契数
  */
-public class LeetCode0509 {
+public class Solution {
     public static void main(String[] args) {
-        LeetCode0509 code = new LeetCode0509();
+        Solution code = new Solution();
         System.out.println(code.fib(2));
     }
 

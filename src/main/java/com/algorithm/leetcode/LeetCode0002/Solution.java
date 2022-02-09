@@ -1,14 +1,14 @@
-package com.algorithm.leetcode;
+package com.algorithm.leetcode.LeetCode0002;
 
 /**
  * @author cuibaoqiang
  * @date 2021-09-02 16:22:06
  * @desc 两数相加
  */
-public class LeetCode0002 {
+public class Solution {
     //    l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
     public static void main(String[] args) {
-        LeetCode0002 code = new LeetCode0002();
+        Solution code = new Solution();
         ListNode l1 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))));
 
         ListNode l2 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));

@@ -1,13 +1,13 @@
-package com.algorithm.leetcode;
+package com.algorithm.leetcode.LeetCode0050;
 
 /**
  * @author cuibaoqiang
  * @date 2022-02-08 15:32:22
  * @desc Pow(x,n)
  */
-public class LeetCode0050 {
+public class Solution {
     public static void main(String[] args) {
-        LeetCode0050 code = new LeetCode0050();
+        Solution code = new Solution();
         System.out.println(code.myPow(2, -2147483648));
     }
 

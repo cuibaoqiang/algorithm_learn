@@ -1,13 +1,13 @@
-package com.algorithm.leetcode;
+package com.algorithm.leetcode.LeetCode0007;
 
 /**
  * @author cuibaoqiang
  * @date 2022-02-08 16:47:35
  * @desc 整数反转
  */
-public class LeetCode0007 {
+public class Solution {
     public static void main(String[] args) {
-        LeetCode0007 code = new LeetCode0007();
+        Solution code = new Solution();
         System.out.println(code.reverse(-112345));
 
     }

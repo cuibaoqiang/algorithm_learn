@@ -1,13 +1,13 @@
-package com.algorithm.leetcode;
+package com.algorithm.leetcode.LeetCode0009;
 
 /**
  * @author cuibaoqiang
  * @date 2021-09-03 15:03:43
  * @desc 回文数
  */
-public class LeetCode0009 {
+public class Solution {
     public static void main(String[] args) {
-        LeetCode0009 code = new LeetCode0009();
+        Solution code = new Solution();
         System.out.println(code.isPalindrome(121));
     }
 

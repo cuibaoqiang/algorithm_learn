@@ -1,4 +1,4 @@
-package com.algorithm.leetcode;
+package com.algorithm.leetcode.LeetCode0026;
 
 import java.util.Arrays;
 
@@ -7,9 +7,9 @@ import java.util.Arrays;
  * @date 2022-02-08 16:56:09
  * @desc 删除有序数组中重复项
  */
-public class LeetCode0026 {
+public class Solution {
     public static void main(String[] args) {
-        LeetCode0026 code = new LeetCode0026();
+        Solution code = new Solution();
         int[] arr = new int[]{1, 1, 2, 3, 4, 5, 5, 6};
         int count = code.removeDuplicates(arr);
         System.out.println(count);

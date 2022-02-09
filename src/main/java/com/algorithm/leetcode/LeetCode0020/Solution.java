@@ -1,4 +1,4 @@
-package com.algorithm.leetcode;
+package com.algorithm.leetcode.LeetCode0020;
 
 import java.util.Stack;
 
@@ -7,9 +7,9 @@ import java.util.Stack;
  * @date 2022-02-08 14:55:47
  * @desc 有效的括号
  */
-public class LeetCode0020 {
+public class Solution {
     public static void main(String[] args) {
-        LeetCode0020 code = new LeetCode0020();
+        Solution code = new Solution();
         System.out.println(code.isValid("()[]{}"));
 
     }

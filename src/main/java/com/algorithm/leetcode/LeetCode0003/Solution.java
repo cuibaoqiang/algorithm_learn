@@ -1,4 +1,4 @@
-package com.algorithm.leetcode;
+package com.algorithm.leetcode.LeetCode0003;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,10 +8,10 @@ import java.util.Map;
  * @date 2021-09-03 11:01:22
  * @desc 无重复字符的最长子串
  */
-public class LeetCode0003 {
+public class Solution {
 
     public static void main(String[] args) {
-        LeetCode0003 code = new LeetCode0003();
+        Solution code = new Solution();
         System.out.println(code.lengthOfLongestSubstring("pwwkew"));
 
     }
