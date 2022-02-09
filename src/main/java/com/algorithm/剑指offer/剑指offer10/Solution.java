@@ -13,7 +13,7 @@ public class Solution {
         System.out.println(s.fib1(45));
 
     }
-    final int MOD = 2000000007;
+    final int MOD = 1000000007;
 
     // 动态规划
     public int fib(int n) {
