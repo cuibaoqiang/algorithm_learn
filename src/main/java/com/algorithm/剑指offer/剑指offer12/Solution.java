@@ -1,4 +1,4 @@
-package com.algorithm.剑指offer;
+package com.algorithm.剑指offer.剑指offer12;
 
 import java.util.Arrays;
 
@@ -7,9 +7,9 @@ import java.util.Arrays;
  * @date 2021-09-07 14:19:46
  * @desc 矩阵中的路径
  */
-public class 剑指offer12 {
+public class Solution {
     public static void main(String[] args) {
-        剑指offer12 code = new 剑指offer12();
+        Solution code = new Solution();
 //        char[][] board = {{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
         char[][] board = {{'C','A','A'},{'A','A','A'},{'B','C','D'}};
         String word = "AAB";

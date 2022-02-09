@@ -1,4 +1,4 @@
-package com.algorithm.剑指offer;
+package com.algorithm.剑指offer.剑指offer06;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,9 +9,9 @@ import java.util.List;
  * @date 2021-09-07 10:41:36
  * @desc 从尾到头打印链表
  */
-public class 剑指offer06 {
+public class Solution {
     public static void main(String[] args) {
-        剑指offer06 code = new 剑指offer06();
+        Solution code = new Solution();
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(3);
         ListNode node3 = new ListNode(2);
