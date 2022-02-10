@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class Solution {
     public static void main(String[] args) {
         Solution code = new Solution();
-//        char[][] board = {{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
+        //  char[][] board = {{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
         char[][] board = {{'C','A','A'},{'A','A','A'},{'B','C','D'}};
         String word = "AAB";
         System.out.println(code.exist(board, word));
