@@ -1,5 +1,7 @@
 package com.algorithm.demo.demo5;
 
+import java.util.Stack;
+
 /**
  * @author cuibaoqiang
  * @date 2022-02-17 22:34:53
@@ -44,6 +46,61 @@ public class BinaryTree {
             root = null;
         } else {
             root.delete(i);
+        }
+    }
+
+    // 非递归前序遍历
+    public void preOrder() {
+        if (root != null) {
+            Stack<TreeNode> stack = new Stack<>();
+            stack.push(root);
+            while (!stack.empty()) {
+                TreeNode p = stack.pop();
+                if (p != null) {
+                    System.out.println(p.value);
+                    stack.push(p.rightNode);
+                    stack.push(p.leftNode);
+                }
+            }
+        }
+    }
+
+    // 非递归中序遍历
+    public void inOrder() {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode p = root;
+        do {
+            while (p != null) {
+                stack.push(p);
+                p = p.leftNode;
+            }
+            p = stack.pop();
+            System.out.println(p.value);
+            if (p.rightNode != null) {
+                p = p.rightNode;
+            } else {
+                p = null;
+            }
+        } while (!stack.empty() || p != null);
+    }
+
+    // 非递归后序遍历
+    public void postOrder() {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode p = root;
+
+        while (!stack.empty() || p != null) {
+            while (p != null) {
+                stack.push(p);
+                p = p.leftNode;
+            }
+            p = stack.pop();
+            System.out.println(p.value);
+            if (!stack.empty() && p == stack.peek().leftNode) {
+                p = stack.peek().rightNode;
+            } else {
+                p = null;
+            }
         }
     }
 }
