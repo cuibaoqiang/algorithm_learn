@@ -69,7 +69,7 @@ public class BinaryTree {
     public void inOrder() {
         Stack<TreeNode> stack = new Stack<>();
         TreeNode p = root;
-        do {
+        while (!stack.empty() || p != null) {
             while (p != null) {
                 stack.push(p);
                 p = p.leftNode;
@@ -81,7 +81,7 @@ public class BinaryTree {
             } else {
                 p = null;
             }
-        } while (!stack.empty() || p != null);
+        }
     }
 
     // 非递归后序遍历
