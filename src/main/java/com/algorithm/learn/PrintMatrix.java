@@ -5,9 +5,9 @@ import java.util.Arrays;
 /**
  * @author cuibaoqiang
  * @date 2022-03-22 21:22:21
- * @desc
+ * @desc 逆时针打印矩阵
  */
-public class test {
+public class PrintMatrix {
     public static void main(String[] args) {
         printNum(5, 5);
     }
