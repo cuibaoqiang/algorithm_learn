@@ -19,6 +19,7 @@ public class MergeSort {
     static void merge(int[] nums, int start, int middle, int end) {
         int n1 = middle - start + 1;
         int n2 = end - middle;
+        // 新建两个临时数组保存 前后两部分数据
         int[] L = new int[n1];
         int[] R = new int[n2];
         int i, j = 0, k;
@@ -28,6 +29,7 @@ public class MergeSort {
         for (i = 0; i < n2; i++) {
             R[i] = nums[middle + i + 1];
         }
+        // 开始排序 取两个数组中小的数放进原数组
         i = 0;
         for (k = start; k <= end; k++) {
             if (i < L.length && j < R.length) {
