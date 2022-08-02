@@ -13,14 +13,21 @@ public class PrintMatrix {
     }
 
     private static void printNum(int row, int column) {
+
+        // 构建数组
         int[][] intArr = new int[row][column];
         for (int i = 0; i < row * column; i++) {
             intArr[i / column][i % column] = i + 1;
         }
         System.out.println(Arrays.deepToString(intArr));
+
+        // 遍历起始行
         int r = 0;
+        // 遍历起始列
         int c = column - 1;
+        // 计数
         int count = 0;
+        // 方向 1 ← 2 ↓ 3 → 4 ↑
         int direction = 1;
         while (count < row * column) {
             if (intArr[r][c] != 0) {
@@ -33,7 +40,6 @@ public class PrintMatrix {
                 case 1:
                     if (c > 0 && intArr[r][c-1] != 0) {
                         c--;
-                        continue;
                     } else {
                         direction = 2;
                     }
@@ -41,7 +47,6 @@ public class PrintMatrix {
                 case 2:
                     if (r < row-1 && intArr[r+1][c] != 0) {
                         r++;
-                        continue;
                     } else {
                         direction = 3;
                     }
@@ -49,7 +54,6 @@ public class PrintMatrix {
                 case 3:
                     if (c < column -1 && intArr[r][c+1] != 0) {
                         c++;
-                        continue;
                     } else {
                         direction = 4;
                     }
