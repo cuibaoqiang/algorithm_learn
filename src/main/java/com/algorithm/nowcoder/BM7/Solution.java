@@ -1,27 +1,34 @@
-package com.algorithm.nowcoder.BM6;
+package com.algorithm.nowcoder.BM7;
 
 /**
  * @author cuibaoqiang
- * @date 2023-02-14 08:36:49
- * @desc BM6 判断链表中是否有环
+ * @date 2023-02-17 22:25:12
+ * @desc BM7 链表中环的入口结点
  */
 public class Solution {
 
     public static void main(String[] args) {
-        Solution code = new Solution();
     }
 
-    public boolean hasCycle(ListNode head) {
-        ListNode fast = head;
-        ListNode slow = head;
+    public ListNode EntryNodeOfLoop(ListNode pHead) {
+        ListNode fast = pHead;
+        ListNode slow = pHead;
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
             if (slow.equals(fast)) {
-                return true;
+               break;
             }
         }
-        return false;
+        if (fast == null || fast.next == null) {
+            return null;
+        }
+        slow = pHead;
+        while (!fast.equals(slow)) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+        return slow;
     }
 
     public static class ListNode {
