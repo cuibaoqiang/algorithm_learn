@@ -16,11 +16,6 @@ public class Solution {
 
         ListNode l2 = new ListNode(1, new ListNode(2, new ListNode(9, new ListNode(9))));
 
-        ListNode node = code.mergeKLists(new ArrayList<>(Arrays.asList(l1, l2)));
-        while (node != null) {
-            System.out.println(node.val);
-            node = node.next;
-        }
     }
 
     public boolean hasCycle(ListNode head) {
