@@ -3,7 +3,7 @@ package com.algorithm.nowcoder.BM16;
 /**
  * @author cuibaoqiang
  * @date 2023-03-08 08:15:53
- * @desc BM15 删除有序链表中重复的元素-II
+ * @desc BM16 删除有序链表中重复的元素-II
  */
 public class Solution {
 
