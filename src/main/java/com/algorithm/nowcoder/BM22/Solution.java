@@ -3,8 +3,7 @@ package com.algorithm.nowcoder.BM22;
 /**
  * @author cuibaoqiang
  * @date 2023-04-18 08:26:04
- * @desc
-BM22 比较版本号
+ * @desc BM22 比较版本号
  */
 public class Solution {
 
