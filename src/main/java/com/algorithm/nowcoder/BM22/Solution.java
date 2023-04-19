@@ -1,4 +1,4 @@
-package com.algorithm.nowcoder.BM21.BM22;
+package com.algorithm.nowcoder.BM22;
 
 /**
  * @author cuibaoqiang
