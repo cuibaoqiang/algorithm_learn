@@ -1,5 +1,8 @@
 package com.algorithm.nowcoder.BM28;
 
+import java.util.ArrayDeque;
+import java.util.Queue;
+
 /**
  * @author cuibaoqiang
  * @date 2023-04-26 08:33:26
@@ -14,7 +17,6 @@ public class Solution {
 
     }
 
-
     /**
      *
      * @param root TreeNode类
@@ -26,6 +28,32 @@ public class Solution {
             return 0;
         }
         return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+    }
+
+    public int maxDepth1 (TreeNode root) {
+        // write code here
+        int depth = 0;
+        if (root == null) {
+            return 0;
+        }
+        Queue<TreeNode> queue = new ArrayDeque<>();
+        queue.add(root);
+        boolean flag = true;
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            flag = !flag;
+            for (int i = 0; i < size; i++) {
+                TreeNode cur = queue.poll();
+                if (cur.left != null) {
+                    queue.add(cur.left);
+                }
+                if (cur.right != null) {
+                    queue.add(cur.right);
+                }
+            }
+            depth++;
+        }
+        return depth;
     }
 
     public static class TreeNode {
